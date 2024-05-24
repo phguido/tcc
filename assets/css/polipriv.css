@@ -1,0 +1,211 @@
+/* Importando fontes do Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.google.com/specimen/Barlow');
+
+/* Reset de margens, preenchimento e caixa de limite */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Definindo variáveis de cores e fontes */
+
+:root {
+    --corbranca: white;
+    --corpreta: rgb(0, 0, 0);
+    --coramarela: rgb(255, 255, 255);
+    --fonte-aboreto: 'Aboreto', cursive;
+    --fonte-bebas: 'Bebas Neue', cursive;
+    --fonte-warp: 'Tilt Warp', cursive;
+    --fonte-script: 'Dancing Script', cursive;
+    --fonte-pt-caption: 'PT Serif Caption', serif;
+    --tamanho-img-cards: 250px;
+    --tamamho-img-cards-1024px: 200px;
+    --fonte-barlow: 'Barlow', cursive;
+}
+
+
+/* Estilos gerais para HTML e BODY */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black url(../../assets/img/1.png) top center no-repeat fixed;
+    background-size: 100vw;
+    z-index: -1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Estilos para cabeçalho */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header ul,
+header a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    margin: auto;
+    gap: 2em;
+    color: var(--corbranca);
+    transition: all .3s;
+    cursor: pointer;
+    font-family: var(--fonte-warp);
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+header nav {
+    margin: auto;
+}
+
+header a:hover {
+    color: #3eff98;
+}
+
+header img {
+    height: 50px;
+    margin-top: 5px;
+    transition: all .5s;
+    margin: auto;
+    display: flex;
+}
+
+
+/* Estilos do logo */
+
+.logo {
+    height: 120px;
+    left: 50px;
+    transition: all 0.5s;
+    display: flex;
+    margin: auto;
+}
+
+
+/* Estilos para menu mobile */
+
+.menu-mobile {
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 1002;
+}
+
+.menu-mobile .linha {
+    width: 32px;
+    height: 2px;
+    background: var(--corbranca);
+    margin: 10px;
+    transform-origin: center;
+    transition: all .5s ease-in-out;
+}
+
+
+/* Estilos do rodapé */
+
+.rodape {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 513px;
+}
+
+
+/* Estilos para o conteúdo do rodapé */
+
+.mano {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+
+/* Estilos para parágrafos no rodapé */
+
+.rodape p {
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+
+/* Estilos para lista no rodapé */
+
+.rodape ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+/* Estilos para itens de lista no rodapé */
+
+.rodape ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+/* Estilos para links no rodapé */
+
+.rodape ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.rodape ul li a:hover {
+    color: #ff9900;
+}
+
+
+/* Estilos para títulos e parágrafos no texto sobre nós */
+
+.texto-politica h1,
+.texto-politica h5 {
+    color: #555;
+    font-family: var(--fonte-bebas);
+}
+
+
+/* Estilos para título h1 no texto sobre nós */
+
+.texto-politica h1 {
+    font-size: 2.5rem;
+}
+
+
+/* Estilos para título h5 no texto sobre nós */
+
+.texto-politica h5 {
+    font-size: 1.5rem;
+    margin-top: 10
+}
+
+.texto-politica {
+    max-width: 800px;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    display: grid;
+}

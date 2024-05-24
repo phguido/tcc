@@ -1,0 +1,367 @@
+/* Importando fontes do Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption&display=swap');
+
+/* Reset de estilos básicos para todos os elementos */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Definindo variáveis de cores, fontes e tamanhos */
+
+:root {
+    --corbranca: white;
+    --corpreta: rgb(0, 0, 0);
+    --coramarela: rgb(255, 255, 255);
+    --fonte-aboreto: 'Aboreto', cursive;
+    --fonte-bebas: 'Bebas Neue', cursive;
+    --fonte-warp: 'Tilt Warp', cursive;
+    --fonte-script: 'Dancing Script', cursive;
+    --fonte-pt-caption: 'PT Serif Caption', serif;
+    --tamanho-img-cards: 250px;
+    --tamamho-img-cards-1024px: 200px;
+}
+
+
+/* Estilos para cabeçalhos h1 e h2 */
+
+.h1 {
+    color: white;
+    font-size: 3rem;
+    font-family: var(--fonte-bebas);
+    letter-spacing: 10px;
+}
+
+.h2 {
+    color: white;
+    font-size: 3rem;
+    font-family: var(--fonte-bebas);
+    letter-spacing: 10px;
+}
+
+
+/* Efeitos de hover para h1 e h2 */
+
+.h1:hover {
+    color: #13a959;
+    scale: 120%;
+    transition: all .3s;
+}
+
+.h2:hover {
+    color: #13a959;
+    scale: 110%;
+    transition: all .3s;
+}
+
+
+/* Efeito de hover para .solucao */
+
+.solucao:hover {
+    scale: 110%;
+    opacity: 100%;
+    transition: all .3s;
+}
+
+
+/* Estilos para o elemento <html> */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Estilos para o corpo do documento */
+
+body {
+    background: black url(../../assets/img/1.png) top center no-repeat fixed;
+    background-size: 100vw;
+    z-index: -1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Estilos para o cabeçalho */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* Estilos para lista não ordenada e links no cabeçalho */
+
+header ul,
+header a {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    margin: auto;
+    gap: 2em;
+    color: var(--corbranca);
+    transition: all .3s;
+    cursor: pointer;
+    font-family: var(--fonte-warp);
+    letter-spacing: 2px;
+    color: #13a959;
+}
+
+
+/* Estilos para a navegação no cabeçalho */
+
+header nav {
+    margin: auto;
+}
+
+
+/* Efeito de hover para links no cabeçalho */
+
+header a:hover {
+    color: #1871ff;
+}
+
+
+/* Estilos para a imagem do cabeçalho */
+
+header img {
+    height: 50px;
+    margin-top: 5px;
+    transition: all .5s;
+}
+
+
+/* Efeito de hover para a imagem do cabeçalho */
+
+header img:hover {
+    scale: .9;
+}
+
+
+/* Estilos para imagens no cabeçalho */
+
+.header-imgs {
+    display: flex;
+    gap: 1.5em;
+}
+
+
+/* Estilos para a logo */
+
+.logo {
+    height: 120px;
+    left: 50px;
+    transition: all 0.5s;
+    display: flex;
+    margin: auto;
+}
+
+
+/* Estilos para o menu mobile */
+
+.menu-mobile {
+    cursor: pointer;
+    display: none;
+    position: fixed;
+    z-index: 1002;
+}
+
+
+/* Estilos para as linhas do ícone de menu mobile */
+
+.menu-mobile .linha {
+    width: 32px;
+    height: 2px;
+    background: var(--corbranca);
+    margin: 10px;
+    transform-origin: center;
+    transition: all .5s ease-in-out;
+}
+
+
+/* Estilos para a seção de início */
+
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 110px);
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+
+/* Estilos para o título na seção de início */
+
+.inicio h1 {
+    text-shadow: black 2px 2px 120px;
+}
+
+
+/* Estilos para o texto na seção de início */
+
+.inicio p {
+    color: var(--corbranca);
+    text-shadow: black 3px 3px 13px;
+    font-family: var(--fonte-aboreto);
+    font-size: .9rem;
+    opacity: 0%;
+}
+
+
+/* Estilos para o botão amarelo */
+
+.btn-amarelo {
+    background-color: var(--coramarela);
+    text-decoration: none;
+    color: var(--corpreta);
+    font-family: var(--fonte-warp);
+    padding: 1em;
+    transition: all .3s;
+}
+
+
+/* Efeito de hover para o botão amarelo */
+
+.btn-amarelo:hover {
+    background-color: rgb(165, 165, 165);
+}
+
+
+/* Estilos para a introdução na seção de início */
+
+.inicio-introducao {
+    padding: 2em 0;
+    margin: auto;
+}
+
+
+/* Estilos para a seção "sobre" */
+
+.sobre {
+    margin: auto;
+    padding: 10em 0;
+    background: var(--corbranca) url(../img/download\ \(3\).jpeg) left bottom repeat scroll;
+    background-size: 100vw;
+}
+
+
+/* Estilos para o container da seção "sobre" */
+
+.container-sobre {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+/* Estilos para a imagem na seção "sobre" */
+
+.imagem {
+    height: 30em;
+    border: 20px solid rgb(126, 84, 0);
+}
+
+
+/* Estilos para informações na se
+
+
+/* Estilos para o texto sobre nós */
+
+.texto-sobrenos {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+
+/* Estilos para títulos e parágrafos no texto sobre nós */
+
+.texto-sobrenos h1,
+.texto-sobrenos h5 {
+    color: #555;
+    font-family: var(--fonte-bebas);
+}
+
+
+/* Estilos para título h1 no texto sobre nós */
+
+.texto-sobrenos h1 {
+    font-size: 2.5rem;
+}
+
+
+/* Estilos para título h5 no texto sobre nós */
+
+.texto-sobrenos h5 {
+    font-size: 1.5rem;
+    margin-top: 10
+}
+
+
+/* Estilos do rodapé */
+
+.rodape {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.mano {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.rodape p {
+    margin-bottom: 10px;
+}
+
+.rodape ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rodape ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.rodape ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.rodape ul li a:hover {
+    color: #ff9900;
+}
+
+.rodape ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.rodape ul li a:hover {
+    color: #ff9900;
+}
